@@ -1,0 +1,19 @@
+.footer {
+  display: grid;
+  place-items: center;
+  height: 209px;
+  background: black;
+  color: white;
+  font-size: 24px;
+  margin-top: 2rem;
+  & img {
+    padding-top: 40px;
+    height: 60px;
+    width: 163px;
+  }
+}
+@media screen and (width <= 768px) {
+  .footer {
+    font-size: 12px;
+  }
+}

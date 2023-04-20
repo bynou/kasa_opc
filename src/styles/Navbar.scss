@@ -1,0 +1,22 @@
+$default_color: #ff6060;
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: $default_color;
+  padding-top: 1rem;
+  gap: 2rem;
+  & > *:first-child {
+    margin-right: auto;
+  }
+  & a {
+    text-decoration: none;
+    color: $default_color;
+    &.active {
+      text-decoration: underline;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
