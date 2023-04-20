@@ -6,24 +6,27 @@ import Error404 from "../pages/Error404";
 import reportWebVitals from "../reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Logements from "../pages/Logements";
+import Layout from "../Layout/Layout";
+
 function Routes() {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <Home />,
+      element: <Layout />,
       errorElement: <Error404 />,
-    },
-    {
-      path: "/logement",
-      element: <Logements />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "/404",
-      element: <Error404 />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/logement",
+          element: <Logements />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+      ],
     },
   ]);
 
