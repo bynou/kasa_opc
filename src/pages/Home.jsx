@@ -1,12 +1,12 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Home_Banner from "../components/Home_Banner";
 import Container_apartments from "../components/Container_apartments";
 
 import "../styles/Home.scss";
 function Home() {
   return (
     <>
-      <Banner />
+      <Home_Banner />
       <Container_apartments />
     </>
   );

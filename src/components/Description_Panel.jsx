@@ -1,14 +1,14 @@
 import React from "react";
-import "../styles/LogementsDescription.scss";
+import "../styles/Description_Panel.scss";
 
-function LogementDescription() {
+function Description_Panel() {
   return (
-    <div className="logements_description">
-      <p className="logements_description_header">
+    <div className="Description_Panel">
+      <p className="Description_Panel_header">
         <span>Description</span>
-        <i className="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-up"></i>
       </p>
-      <p className="logements_description_content">
+      <p className="Description_Panel_content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
         accusamus molestiae, consectetur placeat temporibus et blanditiis illum
         ipsam sit laborum omnis officia libero tempore atque repellat! Amet
@@ -20,4 +20,4 @@ function LogementDescription() {
   );
 }
 
-export default LogementDescription;
+export default Description_Panel;

@@ -1,14 +1,14 @@
 import React from "react";
-import Apartment from "./Apartment.jsx";
+import Apartment_Card from "./Apartment_Card.jsx";
 import "../styles/Container_apartments.scss";
 
 function Container_apartments() {
   return (
     <div className="container">
-      <Apartment />
-      <Apartment />
-      <Apartment />
-      <Apartment />
+      <Apartment_Card />
+      <Apartment_Card />
+      <Apartment_Card />
+      <Apartment_Card />
     </div>
   );
 }
