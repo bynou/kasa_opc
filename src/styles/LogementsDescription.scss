@@ -1,0 +1,32 @@
+$default_color: #ff6060;
+$color_secondary: #f6f6f6;
+$color_tertiary: #e3e3e3;
+.logements_description {
+  p {
+    margin-block: 0;
+  }
+  &_header {
+    background-color: $default_color;
+    color: white;
+    padding: 0.2em 1em;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  &_content {
+    background-color: $color_secondary;
+    color: $default_color;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    //On cherche ici a superposer le background du header avec celui du content
+    //Le header passe alors au dessus du content
+    position: relative;
+    top: -0.3rem;
+    z-index: -1;
+  }
+}

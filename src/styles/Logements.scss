@@ -1,0 +1,20 @@
+$default_color: #ff6060;
+$color_secondary: #f6f6f6;
+$color_tertiary: #e3e3e3;
+.logements {
+  div:first-child {
+    margin-bottom: 1rem;
+  }
+  color: $default_color;
+  img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: rgb(149 157 165 /20%) 0px 8px 24px;
+  }
+  &_display_description {
+    display: flex;
+    gap: 2rem;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Apartment.scss";
+
 function Apartment() {
   return (
     <div className="apartment">

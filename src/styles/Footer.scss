@@ -15,5 +15,9 @@
 @media screen and (width <= 768px) {
   .footer {
     font-size: 12px;
+    height: 150px;
+    & img {
+      height: 40px;
+    }
   }
 }

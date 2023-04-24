@@ -6,7 +6,7 @@ import Error404 from "../pages/Error404";
 import reportWebVitals from "../reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Logements from "../pages/Logements";
-import Layout from "../Layout/Layout";
+import Layout from "../Layouts/Layout";
 
 function Routes() {
   const router = createBrowserRouter([

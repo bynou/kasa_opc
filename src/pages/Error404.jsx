@@ -1,7 +1,7 @@
 import React from "react";
 
 function Error404() {
-  return <div>ERROR 404</div>;
+  return <>ERROR 404</>;
 }
 
 export default Error404;
