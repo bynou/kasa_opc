@@ -1,7 +1,7 @@
 import React from "react";
 import Logement_Description from "../components/Logements_Description";
 import Logements_Banner from "../components/Logements_Banner";
-import Logements_Header from "../components/Logements_Header";
+import Logements_Header from "../components/Logements_header";
 import "../styles/Logements.scss";
 
 function Logements() {

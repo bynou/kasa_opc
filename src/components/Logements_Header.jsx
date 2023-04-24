@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Logements_header.scss";
-function Logements_header() {
+import "../styles/Logements_Header.scss";
+function Logements_Header() {
   return (
     <div className="logements_header">
       <div className="logements_header_container1">
@@ -35,4 +35,4 @@ function Logements_header() {
   );
 }
 
-export default Logements_header;
+export default Logements_Header;
