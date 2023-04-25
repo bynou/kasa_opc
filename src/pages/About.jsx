@@ -1,6 +1,6 @@
 import React from "react";
 import About_Banner from "../components/About_Banner";
-import Description_Panel from "../components/Description_Panel";
+import Collapse from "../components/Collapse";
 import "../styles/About.scss";
 const fiabilitéContent =
   "Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérigiées par nos équipes.";
@@ -15,13 +15,10 @@ function About() {
     <>
       <About_Banner />
       <main className="about_container">
-        <Description_Panel title="Fiabilité" content={fiabilitéContent} />
-        <Description_Panel title="Respect" content={respectContent} />
-        <Description_Panel title="Service" content={serviceContent} />
-        <Description_Panel
-          title="Responsabilité"
-          content={responsabilitéContent}
-        />
+        <Collapse title="Fiabilité" content={fiabilitéContent} />
+        <Collapse title="Respect" content={respectContent} />
+        <Collapse title="Service" content={serviceContent} />
+        <Collapse title="Responsabilité" content={responsabilitéContent} />
       </main>
     </>
   );
