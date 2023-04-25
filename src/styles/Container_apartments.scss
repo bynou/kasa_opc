@@ -7,18 +7,13 @@
   gap: 1rem;
   padding: 1rem;
   justify-content: space-between;
-  & > * {
-    width: 100%;
-    max-width: 15rem;
-    height: 15rem;
-  }
   a {
     text-decoration: none;
   }
 }
 @media screen and (width <= 768px) {
   .container {
-    justify-content: center;
+    justify-content: space-around;
     background-color: white;
     padding: 0;
   }

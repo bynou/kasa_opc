@@ -6,7 +6,10 @@ $default_color: #ff6060;
   color: $default_color;
   padding-top: 1rem;
   gap: 2rem;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
+  @media screen and (width <= 425px) {
+    margin-bottom: 15px;
+  }
   & > *:first-child {
     margin-right: auto;
   }

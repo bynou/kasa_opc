@@ -18,11 +18,26 @@
     mix-blend-mode: darken;
     opacity: 0.3;
     border-radius: 25px;
+    @media screen and (width <= 320px) {
+      font-size: 15px;
+    }
   }
   & h1 {
     position: relative;
     color: #fff;
     padding-inline: 20px;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 30px;
+    @media screen and (width <= 768px) {
+      font-size: 30px;
+    }
+    @media screen and (width = 425px) {
+      text-align: center;
+    }
+    @media screen and (width = 375px) {
+      text-align: center;
+    }
   }
 }
 @media screen and (width <= 768px) {
