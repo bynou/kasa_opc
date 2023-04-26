@@ -29,18 +29,22 @@ $default_color: #ff6060;
     }
   }
 }
+@media screen and (width > 1440px) {
+  .apartment {
+    width: 32%;
+  }
+}
+@media screen and (width = 1440px) {
+  .apartment {
+    width: 31%;
+  }
+}
 @media screen and (width < 1023px) {
   .apartment {
     flex-basis: 40%;
     height: 20rem;
   }
 }
-// @media screen and (width <= 768px) {
-//   .apartment {
-//     flex-basis: 40%;
-//     height: 20rem;
-//   }
-// }
 
 @media screen and (width < 675px) {
   .apartment {

@@ -4,7 +4,6 @@
   border-radius: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 1rem;
   padding: 1rem;
   a {
@@ -15,5 +14,12 @@
   .container {
     background-color: white;
     padding: 0;
+    justify-content: space-around;
   }
 }
+// @media screen and (width > 1440px) {
+//   .container {
+//     justify-content: normal;
+//     justify-content: space-around;
+//   }
+// }
