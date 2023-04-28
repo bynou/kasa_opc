@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/About_Banner.scss";
-import About_Banner_img from "../assets/About_Banner_img.png";
-function About_Banner() {
+
+import SlideShow from "./SlideShow";
+function About_Banner(props) {
   return (
     <div className="About_Banner">
-      <img src={About_Banner_img} alt="" />
+      <SlideShow pictures={props.pictures} />
     </div>
   );
 }

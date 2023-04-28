@@ -5,7 +5,7 @@ import About from "../pages/About";
 import Error404 from "../pages/Error404";
 import reportWebVitals from "../reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Logements from "../pages/Logements";
+import Logement from "../pages/Logement";
 import Layout from "../Layouts/Layout";
 
 function Routes() {
@@ -20,7 +20,7 @@ function Routes() {
         },
         {
           path: "/logement",
-          element: <Logements />,
+          element: <Logement />,
         },
         {
           path: "/about",

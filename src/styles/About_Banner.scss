@@ -1,5 +1,9 @@
 .About_Banner {
+  position: relative;
+  display: flex;
   img {
+    position: relative;
+    height: 100%;
     width: 100%;
     height: 12rem;
     object-fit: cover;
@@ -10,5 +14,31 @@
       height: 10rem;
       border-radius: 10px;
     }
+  }
+}
+.btn {
+  &-previous {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    left: 32px;
+    cursor: pointer;
+  }
+  &-next {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    right: 32px;
+    cursor: pointer;
   }
 }
