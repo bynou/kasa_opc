@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import About_Banner_img from "../assets/About_Banner_img.png";
 function SlideShow(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const pictures = props.pictures ? props.pictures : About_Banner_img;
 
   // On définit ici les fonctions pour iterer sur le array picture
 
@@ -20,17 +18,35 @@ function SlideShow(props) {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  return (
+  // On cherche a définir si il y a une ou plusieurs pictures
+  // Si seulement 1 picture on n'affiche pas les fleches de navigation
+  const isSlideUnique = props.pictures.length === 1;
+  const displaySlide = isSlideUnique ? (
+    <img
+      src={props.pictures[currentIndex]}
+      key={currentIndex}
+      alt="Photo du logement"
+    ></img>
+  ) : (
     <>
-      <button className="btn-previous" onClick={goToPrevious}>
+      <button className="btn btn-previous" onClick={goToPrevious}>
         <i className="fas fa-chevron-left"></i>
       </button>
-      <img src={pictures[currentIndex]} key={currentIndex}></img>
-      <button className="btn-next" onClick={goToNext}>
+      <img
+        className="slideBannerStyle"
+        src={props.pictures[currentIndex]}
+        key={currentIndex}
+        alt="Photo du logement"
+      ></img>
+      <button className="btn btn-next" onClick={goToNext}>
         <i className="fas fa-chevron-right"></i>
       </button>
+      <span>
+        {currentIndex + 1}/{props.pictures.length}
+      </span>
     </>
   );
+  return <>{displaySlide}</>;
 }
 
 export default SlideShow;

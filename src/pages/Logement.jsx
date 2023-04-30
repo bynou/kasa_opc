@@ -5,6 +5,7 @@ import Logement_Header from "../components/Logement_Header";
 import "../styles/Logement.scss";
 import { useLocation } from "react-router-dom";
 import logements from "../datas/logements.json";
+import Error404 from "./Error404";
 
 function Logement() {
   const location = useLocation();
@@ -21,9 +22,11 @@ function Logement() {
     const displayLogementUnique = logements.find(
       (logement) => logement.id === location.state.logementId
     );
+    // if (!displayLogementUnique) return <Error404 />;
     setDisplayLogement(displayLogementUnique);
   }
   if (displayLogement == null) return <div>...Loading</div>;
+
   return (
     <>
       <main className="logements">
