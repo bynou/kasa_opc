@@ -1,6 +1,4 @@
-$default_color: #ff6060;
-$color_secondary: #f6f6f6;
-$color_tertiary: #e3e3e3;
+@use "./variables" as *;
 .logements {
   &_header {
     display: flex;
@@ -24,11 +22,6 @@ $color_tertiary: #e3e3e3;
         }
       }
       &_details {
-        // @media screen and (width > 768px) {
-        //   display: grid;
-        //   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-        //   gap: 1rem;
-        // }
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -37,8 +30,8 @@ $color_tertiary: #e3e3e3;
         span {
           font-weight: 200;
           text-align: center;
-          background-color: $default_color;
-          color: white;
+          background-color: $color-primary;
+          color: $color-secondary;
           padding: 0.2em 2em;
           border-radius: 8px;
           @media screen and (width < 768px) {
@@ -73,16 +66,13 @@ $color_tertiary: #e3e3e3;
         justify-content: center;
         align-items: center;
         gap: 0.2rem;
-        color: $color_tertiary;
+        color: $background-color;
         * {
           font-size: 1.5rem;
         }
         .on {
-          color: $default_color;
+          color: $color-primary;
         }
-        // .off {
-        //   color: $color_tertiary;
-        // }
       }
       &_details {
         display: flex;
@@ -95,7 +85,7 @@ $color_tertiary: #e3e3e3;
           height: 50px;
           width: 50px;
           border-radius: 50%;
-          background-color: $color_tertiary;
+          background-color: $background-color;
         }
       }
     }

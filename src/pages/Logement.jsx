@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Collapse from "../components/Collapse";
-import About_Banner from "../components/About_Banner";
+import Banner from "../components/Banner";
 import Logement_Header from "../components/Logement_Header";
 import "../styles/Logement.scss";
 import { useLocation } from "react-router-dom";
@@ -30,7 +30,7 @@ function Logement() {
   return (
     <>
       <main className="logements">
-        <About_Banner
+        <Banner
           imgUrl={displayLogement.cover}
           pictures={displayLogement.pictures}
         />

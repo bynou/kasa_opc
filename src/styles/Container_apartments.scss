@@ -1,5 +1,6 @@
+@use "./variables" as *;
 .container {
-  background-color: #f6f6f6;
+  background-color: $color-secondary;
   min-height: 50vh;
   border-radius: 2rem;
   display: flex;
@@ -13,14 +14,8 @@
 }
 @media screen and (width < 1023px) {
   .container {
-    background-color: white;
+    background-color: $color-secondary;
     padding: 0;
     justify-content: space-around;
   }
 }
-// @media screen and (width > 1440px) {
-//   .container {
-//     justify-content: normal;
-//     justify-content: space-around;
-//   }
-// }

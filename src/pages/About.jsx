@@ -1,5 +1,5 @@
 import React from "react";
-import About_Banner from "../components/About_Banner";
+import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import "../styles/About.scss";
 const fiabilitéContent =
@@ -13,7 +13,7 @@ const responsabilitéContent =
 function About() {
   return (
     <>
-      <About_Banner />
+      <Banner />
       <main className="about_container">
         <Collapse title="Fiabilité" content={fiabilitéContent} />
         <Collapse title="Respect" content={respectContent} />

@@ -1,4 +1,4 @@
-$default_color: #ff6060;
+@use "./variables" as *;
 .apartment {
   border-radius: 35px 35px 10px 10px;
   width: 30%;
@@ -17,10 +17,10 @@ $default_color: #ff6060;
   &_title {
     width: 70%;
     margin: 5px 0 0 10px;
-    color: white;
+    color: $color-secondary;
     a {
       text-decoration: none;
-      color: white;
+      color: $color-secondary;
       margin-left: 20px;
       margin-inline: 20px;
       display: flex;

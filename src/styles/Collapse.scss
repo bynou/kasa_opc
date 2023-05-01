@@ -1,6 +1,5 @@
-$default_color: #ff6060;
-$color_secondary: #f6f6f6;
-$color_tertiary: #e3e3e3;
+@use "./variables" as *;
+
 .Collapse {
   margin-bottom: 1rem;
   flex-basis: 50%;
@@ -9,8 +8,8 @@ $color_tertiary: #e3e3e3;
     margin-block: 0;
     //On selectionne ici le sibling qui arrive juste après le premier p
     + p {
-      background-color: $color_secondary;
-      color: $default_color;
+      background-color: $color-secondary;
+      color: $color-primary;
       padding: 2rem;
       border-radius: 0.7rem;
       //On cherche ici a superposer le background du header avec celui du content
@@ -27,8 +26,8 @@ $color_tertiary: #e3e3e3;
     }
   }
   &_header {
-    background-color: $default_color;
-    color: white;
+    background-color: $color-primary;
+    color: $color-secondary;
     padding: 0.2em 1em;
     border-radius: 5px;
     display: flex;

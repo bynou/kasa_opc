@@ -26,7 +26,6 @@ function Routes() {
           path: "/about",
           element: <About />,
         },
-        { path: "*", element: <Error404 /> },
       ],
     },
   ]);
