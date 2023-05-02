@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Main.scss";
+import "../styles/Format.scss";
 
 function Main({ children }) {
   return <div className="main">{children}</div>;
