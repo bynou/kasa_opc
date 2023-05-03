@@ -10,10 +10,7 @@ import Error404 from "./Error404";
 import Format from "../components/Format";
 
 function Logement() {
-  //test ICI
   const params = useParams();
-
-  //FIN TEST
   const [displayLogement, setDisplayLogement] = useState(null);
 
   //On utilise le hook useEffect  pour lancer une action dès le chargement,
