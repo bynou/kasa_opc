@@ -16,7 +16,7 @@ function Logement() {
   // du composant
   // prend une fonction + array de dépendance qui se charge uniquement quand le composant
   // est remonté
-  useEffect(callLogementData, []);
+  useEffect(callLogementData, [params]);
   function callLogementData() {
     // On récupère seulement les informations
     // du logement precedemment cliqué en utilisant son ID avec find
