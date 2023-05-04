@@ -21,15 +21,21 @@ function SlideShow(props) {
   // On cherche a définir si il y a une ou plusieurs pictures
   // Si seulement 1 picture on n'affiche pas les fleches de navigation
   const isSlideUnique = props.pictures.length === 1;
-  const displaySlide = isSlideUnique ? (
-    <img
-      src={props.pictures[currentIndex]}
-      key={currentIndex}
-      alt="Photo du logement"
-    ></img>
-  ) : (
+  // const displaySlide = isSlideUnique ? (
+  //   <img
+  //     src={props.pictures[currentIndex]}
+  //     key={currentIndex}
+  //     alt="Photo du logement"
+  //   ></img>
+  // ) : (
+
+  // );
+  return (
     <>
-      <button className="btn btn-previous" onClick={goToPrevious}>
+      <button
+        className={isSlideUnique ? "displaySlideOff" : "btn btn-previous"}
+        onClick={goToPrevious}
+      >
         <i className="fas fa-chevron-left"></i>
       </button>
       <img
@@ -38,15 +44,17 @@ function SlideShow(props) {
         key={currentIndex}
         alt="Photo du logement"
       ></img>
-      <button className="btn btn-next" onClick={goToNext}>
+      <button
+        className={isSlideUnique ? "displaySlideOff" : "btn btn-next"}
+        onClick={goToNext}
+      >
         <i className="fas fa-chevron-right"></i>
       </button>
-      <span>
+      <span className={isSlideUnique ? "displaySlideOff" : ""}>
         {currentIndex + 1}/{props.pictures.length}
       </span>
     </>
   );
-  return <>{displaySlide}</>;
 }
 
 export default SlideShow;

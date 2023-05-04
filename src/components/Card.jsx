@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 function Card(props) {
   return (
     <div className="apartment">
-      <Link
-        to={{ pathname: "/logement/" + props.id }}
-        state={{ urlControl: props.id }}
-      >
+      <Link to={{ pathname: "/logement/" + props.id }}>
         <img src={props.cover} alt={props.title} />
         <div className="apartment_title">{props.title}</div>
       </Link>

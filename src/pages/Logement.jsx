@@ -24,7 +24,6 @@ function Logement() {
     const displayLogementUnique = logements.find(
       (logement) => logement.id === params.id
     );
-    // if (!displayLogementUnique) return <Error404 />;
     setDisplayLogement(displayLogementUnique);
   }
   if (displayLogement == null) return <Error404 />;
