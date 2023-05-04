@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card.jsx";
-import "../styles/Container_apartments.scss";
+import "../styles/ContainerApartments.scss";
 import logements from "../datas/logements.json";
-function Container_apartments() {
+function ContainerApartments() {
   return (
     <div className="container">
       {logements.map((logement) => (
@@ -17,4 +17,4 @@ function Container_apartments() {
   );
 }
 
-export default Container_apartments;
+export default ContainerApartments;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Logements_Header.scss";
+import "../styles/LogementsHeader.scss";
 import Tags from "./Tags";
 import Ratings from "./Ratings";
 function Logement_Header(props) {
@@ -24,7 +24,7 @@ function Logement_Header(props) {
             <span>{lastName}</span>
           </h3>
           <div className="logements_header_container2_details_icon">
-            <img src={props.hostImg} alt="Photo de profil" />
+            <img src={props.hostImg} alt="profil du l'auteur de l'annonce" />
           </div>
         </div>
         <Ratings rating={props.rating} />

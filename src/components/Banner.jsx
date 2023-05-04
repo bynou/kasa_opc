@@ -8,7 +8,11 @@ function Banner(props) {
   const pictures = props.pictures ? (
     <SlideShow pictures={props.pictures} />
   ) : (
-    <img className="aboutBannerStyle" src={About_Banner_img}></img>
+    <img
+      className="aboutBannerStyle"
+      alt="Bannière du site Kasa"
+      src={About_Banner_img}
+    ></img>
   );
   return <div className="Banner">{pictures}</div>;
 }

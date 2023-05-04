@@ -1,7 +1,7 @@
 import React from "react";
-import Home_Banner from "../components/Home_Banner";
+import HomeBanner from "../components/HomeBanner";
 import Footer from "../Layouts/Footer";
-import Container_apartments from "../components/Container_apartments";
+import ContainerApartments from "../components/ContainerApartments";
 import Format from "../components/Format";
 
 function Home() {
@@ -9,8 +9,8 @@ function Home() {
     <>
       <div className="FlexForFooter">
         <Format>
-          <Home_Banner />
-          <Container_apartments />
+          <HomeBanner />
+          <ContainerApartments />
         </Format>
         <Footer />
       </div>

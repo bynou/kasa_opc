@@ -34,7 +34,7 @@ function SlideShow(props) {
         className="slideBannerStyle"
         src={props.pictures[currentIndex]}
         key={currentIndex}
-        alt="Photo du logement"
+        alt="logement à louer"
       ></img>
       <button
         className={isSlideUnique ? "displaySlideOff" : "btn btn-next"}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Collapse from "../components/Collapse";
 import Banner from "../components/Banner";
 import Footer from "../Layouts/Footer";
-import Logement_Header from "../components/Logement_Header";
+import LogementHeader from "../components/LogementHeader";
 import "../styles/Logement.scss";
 import { useParams } from "react-router-dom";
 import logements from "../datas/logements.json";
@@ -36,7 +36,7 @@ function Logement() {
               imgUrl={displayLogement.cover}
               pictures={displayLogement.pictures}
             />
-            <Logement_Header
+            <LogementHeader
               title={displayLogement.title}
               location={displayLogement.location}
               tags={displayLogement.tags}
