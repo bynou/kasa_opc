@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Logements_Header.scss";
-
 import Tags from "./Tags";
 import Ratings from "./Ratings";
 function Logement_Header(props) {

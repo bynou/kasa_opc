@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Format.scss";
-
-function Main({ children }) {
-  return <div className="main">{children}</div>;
+//Permet de définir les dimensions globales du site
+function Format({ children }) {
+  return <div className="Format">{children}</div>;
 }
 
-export default Main;
+export default Format;

@@ -4,7 +4,7 @@ import SlideShow from "./SlideShow";
 import About_Banner_img from "../assets/About_Banner_img.png";
 function Banner(props) {
   //On verifie la presence de plusieurs pictures pour les afficher,
-  //sinon on affiche l'img de la banner
+  //sinon on affiche l'img de la banner par default
   const pictures = props.pictures ? (
     <SlideShow pictures={props.pictures} />
   ) : (
