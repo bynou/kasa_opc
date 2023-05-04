@@ -15,16 +15,19 @@ const responsabilitéContent =
 function About() {
   return (
     <>
-      <Format>
-        <Banner />
-        <main className="about_container">
-          <Collapse title="Fiabilité" content={fiabilitéContent} />
-          <Collapse title="Respect" content={respectContent} />
-          <Collapse title="Service" content={serviceContent} />
-          <Collapse title="Responsabilité" content={responsabilitéContent} />
-        </main>
-      </Format>
-      <Footer />
+      <div className="FlexForFooter">
+        <Format>
+          <Banner />
+          <main className="about_container">
+            <Collapse title="Fiabilité" content={fiabilitéContent} />
+            <Collapse title="Respect" content={respectContent} />
+            <Collapse title="Service" content={serviceContent} />
+            <Collapse title="Responsabilité" content={responsabilitéContent} />
+          </main>
+        </Format>
+
+        <Footer />
+      </div>
     </>
   );
 }

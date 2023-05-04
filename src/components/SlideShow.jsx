@@ -20,16 +20,8 @@ function SlideShow(props) {
   };
   // On cherche a définir si il y a une ou plusieurs pictures
   // Si seulement 1 picture on n'affiche pas les fleches de navigation
+  // En modifiant la classe des btn + span
   const isSlideUnique = props.pictures.length === 1;
-  // const displaySlide = isSlideUnique ? (
-  //   <img
-  //     src={props.pictures[currentIndex]}
-  //     key={currentIndex}
-  //     alt="Photo du logement"
-  //   ></img>
-  // ) : (
-
-  // );
   return (
     <>
       <button

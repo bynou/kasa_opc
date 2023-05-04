@@ -8,7 +8,6 @@ import { useParams } from "react-router-dom";
 import logements from "../datas/logements.json";
 import Error404 from "./Error404";
 import Format from "../components/Format";
-
 function Logement() {
   const params = useParams();
   const [displayLogement, setDisplayLogement] = useState(null);
@@ -30,35 +29,37 @@ function Logement() {
 
   return (
     <>
-      <Format>
-        <main className="logements">
-          <Banner
-            imgUrl={displayLogement.cover}
-            pictures={displayLogement.pictures}
-          />
-          <Logement_Header
-            title={displayLogement.title}
-            location={displayLogement.location}
-            tags={displayLogement.tags}
-            host={displayLogement.host}
-            hostImg={displayLogement.host.picture}
-            rating={displayLogement.rating}
-          />
-          <section className="logements_display_description">
-            <Collapse
-              title="Description"
-              content={displayLogement.description}
+      <div className="FlexForFooter">
+        <Format>
+          <main className="logements">
+            <Banner
+              imgUrl={displayLogement.cover}
+              pictures={displayLogement.pictures}
             />
-            <Collapse
-              title="Équipements"
-              content={displayLogement.equipments.map((stuff, i) => (
-                <li key={i}>{stuff}</li>
-              ))}
+            <Logement_Header
+              title={displayLogement.title}
+              location={displayLogement.location}
+              tags={displayLogement.tags}
+              host={displayLogement.host}
+              hostImg={displayLogement.host.picture}
+              rating={displayLogement.rating}
             />
-          </section>
-        </main>
-      </Format>
-      <Footer />
+            <section className="logements_display_description">
+              <Collapse
+                title="Description"
+                content={displayLogement.description}
+              />
+              <Collapse
+                title="Équipements"
+                content={displayLogement.equipments.map((stuff, i) => (
+                  <li key={i}>{stuff}</li>
+                ))}
+              />
+            </section>
+          </main>
+        </Format>
+        <Footer />
+      </div>
     </>
   );
 }
