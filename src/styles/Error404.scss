@@ -6,16 +6,16 @@
   flex-direction: column;
   gap: 4rem;
   @media screen and (width >= 2560px) {
-    padding-bottom: 65rem;
+    padding: 45rem 0 65rem;
   }
   @media screen and (width <= 1440px) {
-    padding-bottom: 20rem;
+    padding: 20rem 0 20rem;
   }
-  @media screen and (width <= 768px) {
-    padding-bottom: 10rem;
+  @media screen and (width = 768px) {
+    padding: 10rem 0 10rem;
   }
   @media screen and (width <= 425px) {
-    padding-bottom: 5rem;
+    padding: 5rem 0 0;
   }
   h1 {
     margin-top: 0em;

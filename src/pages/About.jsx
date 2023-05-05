@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Footer from "../Layouts/Footer";
+
 import Collapse from "../components/Collapse";
-import Format from "../components/Format";
+
 import "../styles/About.scss";
 const fiabilitéContent =
   "Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérigiées par nos équipes.";
@@ -16,17 +16,13 @@ function About() {
   return (
     <>
       <div className="FlexForFooter">
-        <Format>
-          <Banner />
-          <main className="about_container">
-            <Collapse title="Fiabilité" content={fiabilitéContent} />
-            <Collapse title="Respect" content={respectContent} />
-            <Collapse title="Service" content={serviceContent} />
-            <Collapse title="Responsabilité" content={responsabilitéContent} />
-          </main>
-        </Format>
-
-        <Footer />
+        <Banner />
+        <main className="about_container">
+          <Collapse title="Fiabilité" content={fiabilitéContent} />
+          <Collapse title="Respect" content={respectContent} />
+          <Collapse title="Service" content={serviceContent} />
+          <Collapse title="Responsabilité" content={responsabilitéContent} />
+        </main>
       </div>
     </>
   );
