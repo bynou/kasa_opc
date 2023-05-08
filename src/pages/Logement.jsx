@@ -29,34 +29,29 @@ function Logement() {
 
   return (
     <>
-      <div className="FlexForFooter">
-        <main className="logements">
-          <Banner
-            imgUrl={displayLogement.cover}
-            pictures={displayLogement.pictures}
+      <main className="logements">
+        <Banner
+          imgUrl={displayLogement.cover}
+          pictures={displayLogement.pictures}
+        />
+        <LogementHeader
+          title={displayLogement.title}
+          location={displayLogement.location}
+          tags={displayLogement.tags}
+          host={displayLogement.host}
+          hostImg={displayLogement.host.picture}
+          rating={displayLogement.rating}
+        />
+        <section className="logements_display_description">
+          <Collapse title="Description" content={displayLogement.description} />
+          <Collapse
+            title="Équipements"
+            content={displayLogement.equipments.map((stuff, i) => (
+              <li key={i}>{stuff}</li>
+            ))}
           />
-          <LogementHeader
-            title={displayLogement.title}
-            location={displayLogement.location}
-            tags={displayLogement.tags}
-            host={displayLogement.host}
-            hostImg={displayLogement.host.picture}
-            rating={displayLogement.rating}
-          />
-          <section className="logements_display_description">
-            <Collapse
-              title="Description"
-              content={displayLogement.description}
-            />
-            <Collapse
-              title="Équipements"
-              content={displayLogement.equipments.map((stuff, i) => (
-                <li key={i}>{stuff}</li>
-              ))}
-            />
-          </section>
-        </main>
-      </div>
+        </section>
+      </main>
     </>
   );
 }
